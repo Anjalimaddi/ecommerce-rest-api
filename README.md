@@ -2,7 +2,7 @@ Ecommerce REST API
 A simple Spring Boot RESTful API for managing ecommerce products.
 This application allows users to add products and retrieve product details using REST endpoints.
 Live Demo
- Deployed on Render:  https://ecommerce-rest-api-a898.onrender.com/
+ Deployed on Render:  https://ecommerce-rest-api-a898.onrender.com/products
  Project Overview
 This project is a backend REST API built using Spring Boot.
 It demonstrates:
