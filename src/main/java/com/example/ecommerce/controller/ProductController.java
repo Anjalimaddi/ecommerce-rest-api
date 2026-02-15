@@ -2,6 +2,9 @@ package com.example.ecommerce.controller;
 import com.example.ecommerce.model.Product;
 import com.example.ecommerce.service.ProductService;
 import jakarta.validation.Valid;
+
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,4 +31,8 @@ public class ProductController {
         }
         return ResponseEntity.ok(product);
     }
+    @GetMapping
+public List<Product> getAllProducts() {
+    return productService.getAllProducts();
+}
 }
