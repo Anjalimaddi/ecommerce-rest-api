@@ -8,18 +8,21 @@ import java.util.List;
 @Service
 public class ProductService {
 
-    private final List<Product> products = new ArrayList<>();
+    private List<Product> productList = new ArrayList<>();
 
     public Product addProduct(Product product) {
-        products.add(product);
+        productList.add(product);
         return product;
     }
 
     public Product getProductById(Integer id) {
-        return products.stream()
+        return productList.stream()
                 .filter(product -> product.getId().equals(id))
                 .findFirst()
                 .orElse(null);
     }
-}
 
+    public List<Product> getAllProducts() {
+        return productList;
+    }
+}
